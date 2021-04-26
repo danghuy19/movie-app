@@ -1,0 +1,26 @@
+.header{
+  background-color: #373b69;
+  padding: 1rem;
+  
+  display: flex;
+  justify-content: flex-end;
+
+  input[type="search"] {
+    background-color: transparent;
+    border: 2px solid #22254b;
+    border-radius: 1rem;
+    outline: none;
+    color: white;
+    padding: .5rem 1rem;
+
+    &:focus {
+      background-color: transparent;
+    }
+  }
+}
+.movie-container {
+  background-color: #22254b;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}

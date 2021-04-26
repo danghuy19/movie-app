@@ -1,0 +1,52 @@
+.movie {
+  width: 320px;
+  margin: 2rem;
+  margin-left: 0.5rem;
+  background-color: #373b69;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  position: relative;
+  img {
+    width: 100%;
+  }
+  &__info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    color: white;
+    padding: 0 1rem;
+
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+    min-height: 5rem;
+
+    .tag {
+      padding: .5rem;
+      background-color: #22254b;
+      border-radius: .5rem;
+    }
+    .tag.green {
+      color: green;
+    }
+    .tag.orange {
+      color: orange;
+    }
+    .tag.red {
+      color: red;
+    }
+  }
+  &__overview {
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 50%;
+    padding: 0 1rem;
+    overflow: auto;
+    transform: translateY(120%);
+    transition: all .5s ease-in-out;
+  }
+  &:hover &__overview{
+    transform: translateY(0);
+  }
+}
